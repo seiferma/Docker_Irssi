@@ -1,6 +1,8 @@
 FROM quay.io/seiferma/tor-base:latest
 
-RUN apk add irssi
+RUN http_proxy= && \
+    https_proxy= && \
+    apk add irssi
 RUN adduser -h /home/irssi -D irssi
 
 VOLUME ["/home/irssi"]
