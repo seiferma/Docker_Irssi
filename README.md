@@ -5,6 +5,8 @@
 
 The image contains the IRC client irssi. The image ensures that all connections are made through tor to protect the privacy while chatting.
 
+The image exposes a web interface at port 8080, through which the client can be accessed via a browser terminal. Please note that there is no access control or any other security mechanism. Please ensure security by limiting access to the web interface via a reverse proxy.
+
 In order to run this (and derived) images, you have to ensure that
 * the container is started with capabilities NET_ADMIN and NET_RAW
 
