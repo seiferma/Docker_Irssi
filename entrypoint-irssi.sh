@@ -20,7 +20,7 @@ chown $USER_NAME:$GROUP_NAME $DATA_VOLUME
 
 if [ "$1" == "default" ]; then
         echo "Starting irssi"
-		su-exec $USER_NAME ttyd -p 8080 abduco -a irssi &> /tmp/ttyd.log &
+		su-exec $USER_NAME ttyd -W -p 8080 abduco -a irssi &> /tmp/ttyd.log &
 		nft add rule filter INPUT tcp dport 8080 ct state new accept
 		su-exec $USER_NAME abduco -c irssi torsocks irssi
 else
