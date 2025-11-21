@@ -23,6 +23,7 @@ group "default" {
 }
 
 target "default" {
+  platforms = ["linux/amd64", "linux/arm64"]
   tags = ["quay.io/seiferma/irssi-tor:${IRSSI_VERSION}", "quay.io/seiferma/irssi-tor:latest"]
   args = {
     TORBASE_VERSION = "${TORBASE_VERSION}"
