@@ -5,7 +5,7 @@ variable "TORBASE_VERSION" {
 
 variable "IRSSI_VERSION" {
   # renovate: datasource=repology depName=alpine_3_23/irssi versioning=loose
-  default = "1.4.5-r4"
+  default = "1.4.5-r6"
 }
 
 variable "TTYD_VERSION" {
