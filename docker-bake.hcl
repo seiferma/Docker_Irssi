@@ -4,17 +4,17 @@ variable "TORBASE_VERSION" {
 }
 
 variable "IRSSI_VERSION" {
-  # renovate: datasource=repology depName=alpine_3_22/irssi versioning=loose
+  # renovate: datasource=repology depName=alpine_3_23/irssi versioning=loose
   default = "1.4.5-r4"
 }
 
 variable "TTYD_VERSION" {
-  # renovate: datasource=repology depName=alpine_3_22/ttyd versioning=loose
+  # renovate: datasource=repology depName=alpine_3_23/ttyd versioning=loose
   default = "1.7.7-r0"
 }
 
 variable "ABDUCO_VERSION" {
-  # renovate: datasource=repology depName=alpine_3_22/abduco versioning=loose
+  # renovate: datasource=repology depName=alpine_3_23/abduco versioning=loose
   default = "0.6-r6"
 }
 
