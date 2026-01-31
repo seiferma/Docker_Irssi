@@ -1,6 +1,6 @@
 variable "TORBASE_VERSION" {
   # renovate: datasource=docker depName=quay.io/seiferma/tor-base versioning=loose
-  default = "0.4.8.21-r0"
+  default = "0.4.8.22-r0"
 }
 
 variable "IRSSI_VERSION" {
